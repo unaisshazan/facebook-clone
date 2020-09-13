@@ -4,10 +4,11 @@ import "./Header.css";
 function Header() {
   return (
     <div className="header">
-      <div className="header_left">  
+      <div className="header__left">
+      <img src="https://i.ibb.co/XSbCXmk/fb.png" alt="fblogo"/>  
         </div>
-      <div className="header_middle"></div>
-      <div className="header_right"></div>
+      <div className="header__middle"></div>
+      <div className="header__right"></div>
     </div>
   );
 }
