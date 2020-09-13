@@ -4,6 +4,8 @@ import FlagIcon from "@material-ui/icons/Flag";
 import HomeIcon from "@material-ui/icons/Home";
 import SubscriptionsOutlinedIcon from "@material-ui/icons/Subscriptions";
 import StorefrontIcon from "@material-ui/icons/Storefront";
+import {Avatar} from '@material-ui/core';
+
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 import "./Header.css";
 function Header() {
@@ -33,7 +35,11 @@ function Header() {
           <SupervisedUserCircleIcon fontSize="large" />
         </div>
       </div>
-      <div className="header__right"></div>
+      <div className="header__right">
+      <div className="header__info">
+      <Avatar />
+      </div>
+      </div>
     </div>
   );
 }
