@@ -31,7 +31,7 @@ function Header() {
         <div className="header__option">
           <SubscriptionsOutlinedIcon fontSize="large" />
         </div>
-        <div className="header__option">
+        <div className="header__option header__option--active">
           <StorefrontIcon fontSize="large" />
         </div>
         <div className="header__option">
