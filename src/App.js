@@ -7,11 +7,12 @@ function App() {
   return (
     <div className="App">
 <Header/>
-{/* header */}
+<div className="app__body">
 {/* SIDEBAR*/}
-{/*App body */}  
+{/*Wigets*/}  
 {/*Feed */}
-  {/* live news feed*/}
+</div>
+
  
     </div>
   );
