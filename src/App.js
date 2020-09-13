@@ -9,6 +9,8 @@ function App() {
 {/* header */}
 {/* SIDEBAR*/}
 {/*App body */}  
+{/*Feed */}
+  {/* live news feed*/}
  
     </div>
   );
