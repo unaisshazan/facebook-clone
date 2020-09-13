@@ -1,6 +1,6 @@
 import React from "react";
 import {SearchIcon,HomeIcon} from '@material-ui/icons';
-
+import FlagIcon from '@material-ui/icons/Flag';
 import "./Header.css";
 function Header() {
   return (
@@ -16,6 +16,11 @@ function Header() {
    
        <div className="header__option">
        <HomeIcon fontSize="large" />
+
+       </div>
+       <div className="header__option">
+       <FlagIcon fontSize="large" />
+       
        </div>
       </div>
       <div className="header__right"></div>
