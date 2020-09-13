@@ -1,11 +1,13 @@
 import React from 'react';
 import './Sidebar.css';
-function SIdebar() {
+import SidebarRow from './SidebarRow'
+function Sidebar() {
     return (
         <div className="sidebar">
+        <SidebarRow />
             
         </div>
     )
 }
 
-export default SIdebar
+export default Sidebar;
