@@ -3,5 +3,7 @@
 }
  .header{
 padding: 15px 20px;
-display: flex;    
+display: flex;   
+justify-content: space-between;
+
  }
