@@ -1,9 +1,9 @@
 import React from 'react';
 import './SidebarRow.css';
-function SidebarRow() {
+function SidebarRow( {title}) {
     return (
         <div className='siderbarRow'>
-            <p>unais</p>
+            <p>{title}</p>
         </div>
     )
 }
