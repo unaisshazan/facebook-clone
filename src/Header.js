@@ -9,6 +9,7 @@ function Header() {
         </div>
       <div className="header__middle">
       <SearchIcon/>
+      <input type="text"/>
       </div>
       <div className="header__right"></div>
     </div>
