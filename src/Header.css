@@ -1,4 +1,7 @@
 .header__left > img {
   height: 40px;
 }
- 
+ .header{
+padding: 15px 20px;
+display: flex;    
+ }
