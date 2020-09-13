@@ -18,7 +18,7 @@ function Header() {
         <img src="https://i.ibb.co/XSbCXmk/fb.png" alt="fblogo" />
         <div className="header__input">
           <SearchIcon />
-          <input type="text" />
+          <input placeholder="Search Facebook" type="text" />
         </div>
       </div>
       <div className="header__center">
