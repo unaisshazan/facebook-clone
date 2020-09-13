@@ -1,6 +1,7 @@
 import React from "react";
-import {SearchIcon,HomeIcon} from '@material-ui/icons';
+import SearchIcon from '@material-ui/icons/Search';
 import FlagIcon from '@material-ui/icons/Flag';
+import HomeIcon from '@material-ui/icons/Home';
 import "./Header.css";
 function Header() {
   return (
