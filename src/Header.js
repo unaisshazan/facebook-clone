@@ -4,9 +4,12 @@ import FlagIcon from "@material-ui/icons/Flag";
 import HomeIcon from "@material-ui/icons/Home";
 import SubscriptionsOutlinedIcon from "@material-ui/icons/Subscriptions";
 import StorefrontIcon from "@material-ui/icons/Storefront";
-import {Avatar} from '@material-ui/core';
-
+import {Avatar,IconButton} from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
+import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ForumIcon from '@material-ui/icons/Forum';
 import "./Header.css";
 function Header() {
   return (
@@ -38,7 +41,19 @@ function Header() {
       <div className="header__right">
       <div className="header__info">
       <Avatar />
-      </div>
+      <h4>unaissss</h4></div>
+      <IconButton>
+      <AddIcon />
+      </IconButton>
+      <IconButton>
+      <ForumIcon />
+      </IconButton>
+      <IconButton>
+      <NotificationsActiveIcon />
+      </IconButton>
+      <IconButton>
+      <ExpandMoreIcon />
+      </IconButton>
       </div>
     </div>
   );
