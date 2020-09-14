@@ -14,7 +14,7 @@ function MessageSender() {
         <div className="messageSender__top">
         <Avatar />
         <form >
-            <input placeholder={`Whats in your mind`}/>
+            <input placeholder={`Whats in your mind?`}/>
             <input placeholder="image URL (Optional)"/>
              <button onClick={handleSubmit} type="submit">
              Hidden submit</button>       
