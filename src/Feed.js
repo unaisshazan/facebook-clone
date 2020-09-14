@@ -1,9 +1,14 @@
 import React from 'react'
-
+import './Feed.css'
+import StoryReel from './StoryReel'
 const Feed = () => {
     return (
-        <div>
-            
+        <div className="Feed">
+        <StoryReel />    
+        {/*story */}
+
+            {/*MessageSender */}
+
         </div>
     )
 }
