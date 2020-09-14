@@ -17,7 +17,7 @@ function Login() {
           alt=""
         />
       </div>
-      <Button type="submit" onClick={signIn}>
+      <Button className="button" type="submit" onClick={signIn}>
       Sign In
       </Button>
     </div>
