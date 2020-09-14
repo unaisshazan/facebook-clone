@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './Feed.css'
 import StoryReel from './StoryReel'
 import MessageSender from './MessageSender'
@@ -18,6 +18,18 @@ useEffect(() => {
         <div className="Feed">
         <StoryReel />    
           <MessageSender/>
+          {posts.map(post=>(
+            <Post 
+            key={post.id}
+            profilePic={post.profilePic}
+            message={post.message}
+            username={post.username}
+            image={[post.image]}
+            
+            />
+
+          ))}
+
           <Post profilePic="https://i.ibb.co/9WBk6LS/Whats-App-Image-2020-06-12-at-10-53-53-PM.jpg"
           message='wow'
           timestamp="This is time stamp"
