@@ -3,7 +3,7 @@ import "./StoryReel.css";
 import Story from './Story'
 function StoryReel() {
   return (
-    <div className="storyreel">
+    <div className="storyReel">
       <Story
         image="https://i.ibb.co/LQ5gJSj/2.jpg"
         profileSrc="https://i.ibb.co/k4hfG25/Areej-Profile2-pic.png"
