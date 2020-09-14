@@ -1,21 +1,30 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './MessageSender.css'
 import {Avatar} from '@material-ui/core';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import VideocamIcon from '@material-ui/icons/Videocam';
 function MessageSender() {
+    const[input,setInput]= useState("");
+    const [imageUrl, setimageUrl] = useState("")
     const handleSubmit=e=>{
 
       e.preventDefault();  
     }
+
+
     return (
         <div className='messageSender'>
         <div className="messageSender__top">
         <Avatar src="https://i.ibb.co/LRzxhcy/unais.jpg"/>
         <form >
-            <input className="messageSender__input" placeholder={`Whats in your mind?`}/>
-            <input placeholder="image URL (Optional)"/>
+            <input 
+            value={input} onChange={(e) => setInput(e.target.value)}
+            className="messageSender__input" placeholder={`Whats in your mind?`}/>
+            <input
+             value={imageUrl}
+             onChange= {(e)=> setimageUrl(e.target.value)}
+            placeholder="image URL (Optional)"/>
              <button onClick={handleSubmit} type="submit">
              Hidden submit</button>       
             </form>
