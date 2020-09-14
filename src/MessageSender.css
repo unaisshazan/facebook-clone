@@ -27,3 +27,9 @@ padding: 15px;
     border-radius: 999px;
     background-color: #eff2f5;
 }
+.messageSender__top > form > button{
+    display: none;
+}
+.messageSender__input{
+    flex: 1;
+}

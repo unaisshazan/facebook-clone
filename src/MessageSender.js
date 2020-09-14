@@ -12,9 +12,9 @@ function MessageSender() {
     return (
         <div className='messageSender'>
         <div className="messageSender__top">
-        <Avatar />
+        <Avatar src="https://i.ibb.co/LRzxhcy/unais.jpg"/>
         <form >
-            <input placeholder={`Whats in your mind?`}/>
+            <input className="messageSender__input" placeholder={`Whats in your mind?`}/>
             <input placeholder="image URL (Optional)"/>
              <button onClick={handleSubmit} type="submit">
              Hidden submit</button>       
