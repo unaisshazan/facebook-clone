@@ -19,7 +19,7 @@ function Wigets() {
       >
         <a href="https://www.facebook.com/utech98"></a>
       </blockquote>
-      <br/>
+      
       <div
         class="fb-page"
         data-href="https://www.facebook.com/utechacademy"
@@ -36,7 +36,7 @@ function Wigets() {
           class="fb-xfbml-parse-ignore"
         >
           <a href="https://www.facebook.com/utechacademy">
-            UTech Academics Tutor Provider
+            
           </a>
         </blockquote>
       </div>
