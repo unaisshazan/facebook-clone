@@ -9,6 +9,8 @@ const Feed = () => {
         <StoryReel />    
           <MessageSender/>
           <Post />
+          <Post />
+          <Post />
 
         </div>
     )
