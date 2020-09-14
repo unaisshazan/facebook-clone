@@ -1,6 +1,6 @@
 import React from 'react'
-import './Story.css'
-const Story = () => {
+import './story.css'
+function Story() {
     return (
         <div className="story">
             
@@ -9,4 +9,3 @@ const Story = () => {
 }
 
 export default Story
- 

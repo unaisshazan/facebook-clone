@@ -1,9 +1,8 @@
 import React from 'react'
 import './StoryReel.css'
-const StoryReel = () => {
+function StoryReel() {
     return (
         <div className="storyreel">
-        
             
         </div>
     )
