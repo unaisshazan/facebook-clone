@@ -5,6 +5,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Wigets from './Wigets';
+import Login from './Login'
 function App() {
   const user = null;
   return (
