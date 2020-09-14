@@ -12,6 +12,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ForumIcon from '@material-ui/icons/Forum';
 import "./Header.css";
 function Header() {
+  const [{user},dispatch]=useStateValue();
   return (
     <div className="header">
       <div className="header__left">
