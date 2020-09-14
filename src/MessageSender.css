@@ -33,3 +33,24 @@ padding: 15px;
 .messageSender__input{
     flex: 1;
 }
+.messageSender__bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.messsageSender__option{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+}
+.messsageSender__option > h3{
+    font-size: medium;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.messsageSender__option:hover{
+    background-color: #eff2f5;
+    border-radius: 20px;
+
+}
