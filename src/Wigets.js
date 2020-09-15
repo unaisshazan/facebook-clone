@@ -2,44 +2,20 @@ import React from "react";
 import "./Wigets.css";
 function Wigets() {
   return (
-    <div
-      className="fb-page wigets"
-      data-href="https://www.facebook.com/utech98"
-      data-tabs="timeline"
-      data-width="340"
-      data-height="100%"
-      data-small-header="false"
-      data-adapt-container-width="true"
-      data-hide-cover="false"
-      data-show-facepile="true"
-    >
-      <blockquote
-        cite="https://www.facebook.com/utech98"
-        class="fb-xfbml-parse-ignore"
-      >
-        <a href="https://www.facebook.com/utech98"></a>
-      </blockquote>
-      
-      <div
-        class="fb-page"
-        data-href="https://www.facebook.com/utechacademy"
-        data-tabs="timeline"
-        data-width="340"
-        data-height="100vh"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true"
-      >
-        <blockquote
-          cite="https://www.facebook.com/utechacademy"
-          class="fb-xfbml-parse-ignore"
-        >
-          <a href="https://www.facebook.com/utechacademy">
-            
-          </a>
-        </blockquote>
-      </div>
+    <div>
+      <iframe
+        src="https://web.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2Futech98%2Fvideos%2F1000675720403610%2F&show_text=1&width=560"
+        width="340"
+        height="100%"
+        style={{ border: "none", overflow: "hidden" }}
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true"
+        allow="encrypted-media"
+        allowFullScreen="true"
+      ></iframe>
+      <br/>
+ 
     </div>
   );
 }

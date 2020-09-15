@@ -6,8 +6,9 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import {useStateValue} from "./StateProvider";
 import db from './firebase'
-import firebase from './firebase'
+import {firebase} from './firebase'
 function MessageSender() {
+    
     const [{user},dispatch]=useStateValue();
 
     const[input,setInput]= useState("");
@@ -15,14 +16,13 @@ function MessageSender() {
     const handleSubmit=e=>{
 
       e.preventDefault(); 
-      db.collection('posts').add({
-          message:input,
-          timestamp:firebase.firestore.FieldValue.
-          serverTimestamp(),
+      db.collection("posts").add({
+ message:input,
+       createdAt:firebase.firestore.FieldValue.serverTimestamp(),
       profilePic:user.photoURL,
       username:user.displayName,
       image:imageUrl
-        }) 
+        }); 
       setInput("");
       setimageUrl("")
     }

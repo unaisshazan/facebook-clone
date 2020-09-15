@@ -6,29 +6,32 @@ import Post from './Post'
 import db from "./firebase"
 const Feed = () => {
 const [posts,setPosts]=useState([]);
-useEffect(() => {
-  db.collection('posts').orderBy('timestamp','desc').onSnapshot(snapshot=>(
-    setPosts(snapshot.docs.map(doc=>({
-      id:doc.id , data: doc.data()
-    })))
-  ))
- 
-}, []);
+useEffect(()=>{
+  db.collection('posts').orderBy('createdAt','desc').onSnapshot(snapshot=>{
+    let tempData=[]
+    snapshot.forEach(docs=>{
+    tempData.push({...docs.data(),id:docs.id})
+    console.log(docs.data())
+    })
+    setPosts(tempData)
+  })
+},[])
     return (
-        <div className="Feed">
+        <div className="feed">
         <StoryReel />    
           <MessageSender/>
           {posts.map(post=>(
             <Post 
             key={post.id}
-            profilePic={post.data.profilePic}
-            message={post.data.message}
-            username={post.data.username}
-            image={[post.data.image]}
+            profilePic={post.profilePic}
+            message={post.message}
+            username={post.username}
+            image={post.image}
+            createdAt={post.createdAt}
             
             />
 
-          ))}
+          ))} 
 
           <Post profilePic="https://i.ibb.co/9WBk6LS/Whats-App-Image-2020-06-12-at-10-53-53-PM.jpg"
           message='wow'
